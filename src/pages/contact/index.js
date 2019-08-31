@@ -38,8 +38,8 @@ export default class Index extends React.Component {
       <Layout>
         <section className="section">
           <div className="container">
-            <div className="content">
-              <h1>Contact</h1>
+            <div className="content" style={{maxWidth:'40%',margin:'0 auto'}}>
+              <h1 style={{textAlign:'center'}}>Contact</h1>
               <form
                 name="contact"
                 method="post"
@@ -100,9 +100,9 @@ export default class Index extends React.Component {
                     />
                   </div>
                 </div>
-                <div className="field">
+                <div className="field" style={{textAlign:'center'}}>
                   <button className="button is-link" type="submit">
-                    Send
+                    Send message
                   </button>
                 </div>
               </form>
