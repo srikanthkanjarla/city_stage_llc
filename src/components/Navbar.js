@@ -1,7 +1,6 @@
 import React from 'react'
-import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import { Link } from 'gatsby' 
+import logo from '../img/Logo_citystage.png'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -42,7 +41,8 @@ const Navbar = class extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              {/* <img src={logo} alt="Kaldi" style={{ width: '88px' }} /> */}
+              <h1 style={{color:'#ff5a00',fontSize:'2.2rem',fontWeight:800}}>City Stage LLC</h1>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -58,25 +58,23 @@ const Navbar = class extends React.Component {
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
+            style={{display:'flex',marginLeft:'auto'}}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="navbar-start has-text-centered" >
+               <Link className="navbar-item" to="/">
+                Home
+              </Link>
+              <Link className="navbar-item" to="/blog">
+              Events 
+              </Link>
               <Link className="navbar-item" to="/about">
                 About
               </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
               <Link className="navbar-item" to="/contact">
                 Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
+              </Link>                 
             </div>
-            <div className="navbar-end has-text-centered">
+            {/* <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
                 href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
@@ -87,7 +85,7 @@ const Navbar = class extends React.Component {
                   <img src={github} alt="Github" />
                 </span>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>
