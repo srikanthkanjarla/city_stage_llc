@@ -38,7 +38,7 @@ export default class Index extends React.Component {
       <Layout>
         <section className="section">
           <div className="container">
-            <div className="content" style={{maxWidth:'40%',margin:'0 auto'}}>
+            <div className="content" style={{maxWidth:'400px',margin:'0 auto'}}>
               <h1 style={{textAlign:'center'}}>Contact</h1>
               <form
                 name="contact"
