@@ -17,8 +17,18 @@ const Footer = class extends React.Component {
               <div className="columns">
                 <div className="column is-4">
                   <section className="menu">
-                    <ul className="menu-list">
+                    <ul className="menu-list contact">
                          {/* contact info - phone email address*/}
+                         <li style={{margin:"1rem 0",fontWeight:"bold"}}>
+                         <p>Phone : 603-785-0837</p>
+                         </li>
+                         <li style={{margin:"1rem 0",fontWeight:"bold"}}>
+                         <p>Email : citystagela@gmail.com</p>
+                         </li>
+                         <li style={{margin:"1rem 0",fontWeight:"bold"}}>
+                            <address> <p>Address : </p> <p> A99 Adam Street</p>
+                            <p>Texas, TX 555072</p></address>
+                         </li>
                   </ul>
                 </section>
               </div>
