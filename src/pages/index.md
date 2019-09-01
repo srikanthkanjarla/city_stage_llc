@@ -9,16 +9,13 @@ mainpitch:
   description: >
 
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 intro:
   blurbs:
-    - image: /img/coffee.png
+    - image: /img/image2.jpg
       text: >
         Creating spaces for communities
-    - image: /img/tutorials.png
+    - image: /img/image2.jpg
       text: >
         Finding new uses for city streets
   heading: What we offer
