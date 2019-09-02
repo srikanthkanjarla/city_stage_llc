@@ -39,9 +39,9 @@ class BlogRoll extends React.Component {
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
+                    <p className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
-                    </span>                   
+                    </p>                   
                     <p style={{fontWeight:800}}><span>Event Type - </span><span style={{color:'rgb(0,191,255)'}}>{post.frontmatter.type}</span></p>
                   <p><span style={{fontWeight:800}}>Venue - </span>{post.frontmatter.venue}</p>
                   </div>
