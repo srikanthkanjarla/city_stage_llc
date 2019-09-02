@@ -31,7 +31,7 @@ class BlogRoll extends React.Component {
                       />
                     </div>
                   ) : null}
-                  <p className="post-meta">
+                  <div className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
                       to={post.fields.slug}
@@ -41,8 +41,11 @@ class BlogRoll extends React.Component {
                     <span> &bull; </span>
                     <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
-                    </span>
-                  </p>
+                    </span>                   
+                    <p style={{fontWeight:800}}><span>Event Type - </span><span style={{color:'rgb(0,191,255)'}}>{post.frontmatter.type}</span></p>
+                  <p><span style={{fontWeight:800}}>Venue - </span>{post.frontmatter.venue}</p>
+                  </div>
+                  
                 </header>
                 <p>
                   {post.excerpt}
@@ -87,6 +90,8 @@ export default () => (
                 title
                 templateKey
                 date(formatString: "MMMM DD, YYYY")
+                type
+                venue
                 featuredpost
                 featuredimage {
                   childImageSharp {
